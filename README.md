@@ -18,20 +18,23 @@ En el código se utiliza el modelo completo. Para poder juntar las partes del mo
 Contiene todo el código utilizado en el proyecto.
 
 ### Pix2Pix notebook
-Este notebook contiene toda la lógica la red Pix2Pix.
+Notebook de Jupyter donde se encuentra toda la lógica de la Pix2Pix y las métricas para analizar su rendimiento.
 
 ### Dataloader
 Script de Python para crear las carpetas de los conjuntos de entrenamiento, validación y test. Para usarlo, es necesario modificar las siguientes variables:
 
-- folder_path_original y folder_path_gt: Directorios donde se encuentran las imágenes condiciones y ground truth que se van a procesar
+- **folder_path_original**: Directorio donde se encuentran las imágenes condición
+- **folder_path_gt**: Directorio donde se encuentran las imágenes ground truth
 
-- train_path, val_path y test_path: Directorios donde se van a guardar las imágenes procesadas
+- **train_path**: Directorio donde se van a guardar las imágenes de entrenamiento
+- **val_path**: Directorio donde se van a guardar las imágenes de validación
+- **test_path**: Directorio donde se van a guardar las imágenes de test
 
 ### Image threshold
 Script de Python para el aumentado de datos. Utiliza recortes de marcas para insertarlas en imágenes condición y así, generar nuevas imágenes. Para usarlo, es necesario modificar las siguientes variables:
 
-- path_snippets: Directorio donde se encuentran los recortes de marcas
-- path_images: Directorio de las imágenes condición de las cuales, a partir de ellas, se van a generar nuevas imágenes con las marcas añadidas
-- path_dest: Directorio donde se van a guardar las nuevas imágenes con marcas
+- **path_snippets**: Directorio donde se encuentran los recortes de marcas
+- **path_images**: Directorio de las imágenes condición de las cuales, a partir de ellas, se van a generar nuevas imágenes con las marcas añadidas
+- **path_dest**: Directorio donde se van a guardar las nuevas imágenes con marcas
 
 
